@@ -32,7 +32,7 @@ describe('$addToSet operator', function () {
       'baz': ['stomp'],
       'extra': ['read all about it'],
     };
-    var result = mupdate.update(local, update);
+    var result = mupdate(local, update);
 
     assert.deepEqual(result, expected);
     assert.deepEqual(local, result);

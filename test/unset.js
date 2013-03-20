@@ -29,11 +29,11 @@ describe('$unset operator', function () {
       'deeper': {},
       'list': ['foo', 'bar'],
     };
-    var result = mupdate.update(local, update);
-  
+    var result = mupdate(local, update);
+
     assert.deepEqual(result, expected);
     assert.deepEqual(local, result);
-    
+
     return done();
   });
 });

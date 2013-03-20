@@ -30,7 +30,7 @@ describe('$push operator', function () {
       },
       'list': ['foo', 'bar', 'taz'],
     };
-    var result = mupdate.update(local, update);
+    var result = mupdate(local, update);
   
     assert.deepEqual(result, expected);
     assert.deepEqual(local, result);
